@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>学技术的小凯</title>
+  
+  <subtitle>小凯</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-05-01T09:06:09.513Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>JonQuet</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo备份</title>
+    <link href="http://example.com/2022/04/30/hexo-bei-fen/"/>
+    <id>http://example.com/2022/04/30/hexo-bei-fen/</id>
+    <published>2022-04-30T12:12:40.000Z</published>
+    <updated>2022-05-01T09:06:09.513Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;hexo备份&quot;&gt;&lt;a href=&quot;#hexo备份&quot; class=&quot;headerlink&quot; title=&quot;hexo备份&quot;&gt;&lt;/a&gt;hexo备份&lt;/h2&gt;&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="博客" scheme="http://example.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MyBatisPlus</title>
+    <link href="http://example.com/2022/04/30/mybatisplus/"/>
+    <id>http://example.com/2022/04/30/mybatisplus/</id>
+    <published>2022-04-30T12:12:40.000Z</published>
+    <updated>2022-05-01T05:30:32.115Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;MyBatis-Plus&quot;&gt;&lt;a href=&quot;#MyBatis-Plus&quot; class=&quot;headerlink&quot; title=&quot;MyBatis Plus&quot;&gt;&lt;/a&gt;MyBatis Plus&lt;/h3&gt;&lt;p&gt;国产的开源框架，基于</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="http://example.com/categories/java/"/>
+    
+    
+    <category term="MyBatis" scheme="http://example.com/tags/MyBatis/"/>
+    
+    <category term="java" scheme="http://example.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图床</title>
+    <link href="http://example.com/2022/04/30/tu-chuang/"/>
+    <id>http://example.com/2022/04/30/tu-chuang/</id>
+    <published>2022-04-30T12:12:40.000Z</published>
+    <updated>2022-05-01T13:12:32.252Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="博客" scheme="http://example.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>spingboot</title>
+    <link href="http://example.com/2022/04/30/spingboot/"/>
+    <id>http://example.com/2022/04/30/spingboot/</id>
+    <published>2022-04-30T06:32:41.000Z</published>
+    <updated>2022-05-01T09:06:51.720Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>房屋出租管理系统</title>
+    <link href="http://example.com/2022/04/30/verio-shi-pin-jiang-jie-shuo-ming/"/>
+    <id>http://example.com/2022/04/30/verio-shi-pin-jiang-jie-shuo-ming/</id>
+    <published>2022-04-30T06:32:41.000Z</published>
+    <updated>2022-05-01T09:05:16.448Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Verio是一个基于SSM+JSP的房屋租赁系统，包括管理员、房东和租客三种角色。&lt;br&gt;介绍地址：&lt;/p&gt;
+&lt;h2 id=&quot;0-视频介绍&quot;&gt;&lt;a href=&quot;#0-视频介绍&quot; class=&quot;headerlink&quot; title=&quot;0. 视频介绍&quot;&gt;&lt;/a&gt;0.</summary>
+        
+      
+    
+    
+    
+    <category term="Java学习" scheme="http://example.com/categories/Java%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="springboot" scheme="http://example.com/tags/springboot/"/>
+    
+    <category term="房屋出租管理系统" scheme="http://example.com/tags/%E6%88%BF%E5%B1%8B%E5%87%BA%E7%A7%9F%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+</feed>

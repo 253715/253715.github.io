@@ -1,18 +1,14 @@
 ---
 title: {{ title }}
 date: {{ date }}
-author:JonQuet
-password:
+author: JonQuet
+top: true
+cover: true
 tags:
 - 
-- 
-author:JonQuet
-img:
-top:  
 categories:
 - 
--  
-top:true
-summary:
-keywords:
+- 
+password: 
+summary: 
 ---

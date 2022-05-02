@@ -1,5 +1,5 @@
 ---
-typora-copy-images-to: upload
+
 title: MyBatisPlus
 date: 2022-04-30 20:12:40
 tags:

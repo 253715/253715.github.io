@@ -25,6 +25,9 @@ menu:
   相册:
     url: /galleries 
     icon: fas fa-image
+  百宝箱:
+    url: /tools
+    icon: fas fa-image
 
   # 二级菜单写法如下
   Medias:
@@ -116,7 +119,6 @@ musics:
   volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
   listFolded: false  # 列表默认折叠
   listMaxHeight: "525px" #列表最大高度
-
 # Whether to display the videos.
 # 是否在首页显示视频.
 video:
@@ -610,7 +612,7 @@ ribbon:
 
 # 背景动态彩带.
 ribbon_dynamic:
-  enable: false
+  enable: true
 
 # sharejs文章分享模块.
 # 支持顺序，可选项目为twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.

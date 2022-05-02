@@ -1,6 +1,8 @@
 ---
 title: {{ title }}
 date: {{ date }}
+author:JonQuet
+password:
 tags:
 - 
 - 
@@ -10,4 +12,7 @@ top:
 categories:
 - 
 -  
+top:true
+summary:
+keywords:
 ---

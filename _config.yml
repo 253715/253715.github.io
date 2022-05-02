@@ -29,6 +29,8 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - 'tools/*'
+  - 'tools/**'
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -105,7 +107,13 @@ deploy:
   type: git
   repository: https://github.com/253715/253715.github.io.git
   branch: main
-
+backup:
+  type: git
+  message: backup my blog of https://github.com/253715/253715.github.io.git
+  repository:
+    # 你的github仓库地址,备份分支名  （建议新建backup分支）
+  github: https://github.com/253715/253715.github.io.git,backup
+    # coding: https://git.coding.net/hojun/hojun.git,backup
 githubEmojis:
   enable: true
   className: github-emoji

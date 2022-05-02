@@ -1,6 +1,8 @@
 ---
 title: hexo备份
 date: 2022-04-30 20:12:40
+top: true
+cover: true
 tags:
 - hexo
 categories:

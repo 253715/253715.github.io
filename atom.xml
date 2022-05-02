@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-01T15:01:24.366Z</updated>
+  <updated>2022-05-02T03:31:00.464Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>linux</title>
+    <link href="http://example.com/2022/05/02/linux/"/>
+    <id>http://example.com/2022/05/02/linux/</id>
+    <published>2022-05-02T03:10:45.000Z</published>
+    <updated>2022-05-02T03:31:00.464Z</updated>
+    
+    
+    
+    
+    <category term="服务器" scheme="http://example.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    <category term="linux" scheme="http://example.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/linux/"/>
+    
+    
+    <category term="linux" scheme="http://example.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo备份</title>
     <link href="http://example.com/2022/04/30/hexo-bei-fen/"/>
     <id>http://example.com/2022/04/30/hexo-bei-fen/</id>
     <published>2022-04-30T12:12:40.000Z</published>
-    <updated>2022-05-01T15:01:24.366Z</updated>
+    <updated>2022-05-02T03:24:14.594Z</updated>
     
     
       
@@ -71,7 +90,7 @@
     <link href="http://example.com/2022/04/30/mybatisplus/"/>
     <id>http://example.com/2022/04/30/mybatisplus/</id>
     <published>2022-04-30T12:12:40.000Z</published>
-    <updated>2022-05-01T05:30:32.115Z</updated>
+    <updated>2022-05-02T03:12:27.400Z</updated>
     
     
       

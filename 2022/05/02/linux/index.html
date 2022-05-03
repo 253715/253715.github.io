@@ -614,21 +614,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-05-02
+                    2022-05-03
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    902
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 
@@ -760,7 +760,95 @@ export PATH CLASSPATH JAVA_HOME<span aria-hidden="true" class="line-numbers-rows
 
 <p>配置成功</p>
 <p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220502220505.png"></p>
-<h2 id="部署springbooot应用"><a href="#部署springbooot应用" class="headerlink" title="部署springbooot应用"></a>部署springbooot应用</h2><h3 id="本地部署"><a href="#本地部署" class="headerlink" title="本地部署"></a>本地部署</h3><h2 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h2><ol>
+<h3 id="安装tomcat"><a href="#安装tomcat" class="headerlink" title="安装tomcat"></a>安装tomcat</h3><ul>
+<li><p>配置tomcat</p>
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503102901.png"></p>
+</li>
+<li><p>解压</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">tar <span class="token operator">-</span>zxvf apache<span class="token operator">-</span>tomcat<span class="token operator">-</span><span class="token number">9.0</span><span class="token number">.34</span><span class="token punctuation">.</span>tar<span class="token punctuation">.</span>gz<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503103059.png"></p>
+<ul>
+<li><p>查看解压后的文件夹</p>
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503103243.png"></p>
+<ul>
+<li><p>启动tomcat</p>
+<p>启动tomcat linux里直接执行bin文件里面的startup.sh，windows执行startup.bat，不同系统不一样</p>
+<p>./startup.sh</p>
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503103635.png"></p>
+<p>可以打开浏览器看一下是不是启动成功了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503104148.png"></p>
+<ul>
+<li><p>centos开放8080端口</p>
+<ol>
+<li><p>检查防火墙状态 ：firewall-cmd –state  runing表示防火墙是开启的</p>
+</li>
+<li><p>如果没有开启要执行开始命令：systemctl start firwalld.service</p>
+</li>
+</ol>
+</li>
+<li><p>开放端口</p>
+</li>
+</ul>
+<ol>
+<li><p>firewall-cmd –zone=public –add-port=8080/tcp –permanent</p>
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503105714.png"></p>
+</li>
+<li><p>重新启动防火墙 ：systemctl  restart firwalld.service</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="部署springbooot应用"><a href="#部署springbooot应用" class="headerlink" title="部署springbooot应用"></a>部署springbooot应用</h2><h3 id="本地部署"><a href="#本地部署" class="headerlink" title="本地部署"></a>本地部署</h3><h3 id="部署在linux上"><a href="#部署在linux上" class="headerlink" title="部署在linux上"></a>部署在linux上</h3><ol>
+<li>数据库连接之后，修改配置文件</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503092638.png"></p>
+<ol start="2">
+<li><p>打包</p>
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503092721.png"></p>
+<ol start="3">
+<li><p>打包完成后可以看到</p>
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503092950.png"></p>
+<ol start="4">
+<li><p>在本地启动</p>
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503093415.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503093445.png"></p>
+<ol start="5">
+<li><p>部署到linux</p>
+<ul>
+<li>直接用xftp放到java里</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503100607.png"></p>
+<ul>
+<li>查看已经进去了</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503100751.png"></p>
+<ul>
+<li><p>执行启动命令 java -jar</p>
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503101001.png"></p>
+<ul>
+<li><p>测试</p>
+<p>把本地关了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503101227.png"></p>
+<p>输入linux域名</p>
+<p><img src="https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503111343.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h2><ol>
 <li>先将mysql压缩包导入到linux中去</li>
 <li>解压缩</li>
 </ol>
@@ -1259,7 +1347,7 @@ firewall<span class="token operator">-</span>cmd <span class="token comment">--r
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">5.8k</span>
+                        class="white-color">6k</span>
             
             
             

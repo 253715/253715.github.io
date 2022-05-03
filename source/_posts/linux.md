@@ -170,9 +170,97 @@ source /etc/profile
 
 ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220502220505.png)
 
+### 安装tomcat
+
+- 配置tomcat
+
+  ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503102901.png)
+
+- 解压
+
+  ```java
+  tar -zxvf apache-tomcat-9.0.34.tar.gz
+  ```
+
+  ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503103059.png)
+
+  - 查看解压后的文件夹
+
+    ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503103243.png)
+
+    - 启动tomcat
+
+      启动tomcat linux里直接执行bin文件里面的startup.sh，windows执行startup.bat，不同系统不一样
+
+      ./startup.sh
+
+      ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503103635.png)
+
+      可以打开浏览器看一下是不是启动成功了
+
+      ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503104148.png)
+
+      - centos开放8080端口
+
+        1. 检查防火墙状态 ：firewall-cmd --state  runing表示防火墙是开启的
+
+        1. 如果没有开启要执行开始命令：systemctl start firwalld.service
+
+      -  开放端口
+
+        1. firewall-cmd --zone=public --add-port=8080/tcp --permanent
+
+           ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503105714.png)
+
+        2. 重新启动防火墙 ：systemctl  restart firwalld.service
+
 ## 部署springbooot应用
 
 ### 本地部署
+
+### 部署在linux上
+
+1. 数据库连接之后，修改配置文件
+
+![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503092638.png)
+
+2. 打包
+
+   ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503092721.png)
+
+   3. 打包完成后可以看到
+
+      ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503092950.png)
+
+      4. 在本地启动
+
+         ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503093415.png)
+
+         ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503093445.png)
+
+         5. 部署到linux
+
+            - 直接用xftp放到java里
+
+            ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503100607.png)
+
+            - 查看已经进去了
+
+            ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503100751.png)
+
+            - 执行启动命令 java -jar
+
+              ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503101001.png)
+
+              - 测试
+
+                把本地关了
+
+                ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503101227.png)
+
+                输入linux域名
+
+                ![](https://cdn.jsdelivr.net/gh/253715/253715-imgs/images/20220503111343.png)
 
 ## 安装mysql
 
